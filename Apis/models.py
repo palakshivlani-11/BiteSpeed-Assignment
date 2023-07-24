@@ -18,7 +18,13 @@ class Contact(models.Model):
     deletedAt = models.DateTimeField(blank=True,null=True)
     
     def __str__(self):
-        return (self.email + " " + self.phonenumber)
+        if self.email == None:
+            return (self.phonenumber)
+        elif self.phonenumber == None:
+            return (self.email)
+        else:
+            return (self.email+" "+self.phonenumber)
+        
     
 
     
