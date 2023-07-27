@@ -26,7 +26,6 @@ class identity(generics.GenericAPIView):
             "phonenumbers" : [],
             "secondaryContactIds":[]
         }
-        import pdb;pdb.set_trace()
         if already_exists.exists():
             already_exists_obj = already_exists.first()
             if already_exists_obj.linkprecedence == "primary":
