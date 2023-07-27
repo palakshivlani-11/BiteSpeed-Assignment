@@ -1,6 +1,10 @@
-# Bitespeed Identity re-concillation Api
+# Bitespeed Backend Task: Identity Reconciliation 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bitespeed needs a way to identify and keep track of a customer's identity across multiple purchases.
+
+We know that orders on FluxKart.com will always have either an **`email`** or **`phoneNumber`** in the checkout event.
+
+Bitespeed keeps track of the collected contact information in a relational database table named **`Contact`.**
 
 ## Steps to run the project
 
@@ -18,3 +22,5 @@ Builds the project on docker
 
 Runs the project on the development server and the exposed endpoint is
 ``/identity``
+
+Resume link : https://drive.google.com/file/d/1GbWdjxdOsHAsEIJHSzaUwbhEibBjo2X_/view?usp=sharing
